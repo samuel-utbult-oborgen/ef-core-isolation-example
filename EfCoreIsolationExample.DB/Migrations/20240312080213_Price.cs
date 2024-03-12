@@ -50,6 +50,11 @@ namespace EfCoreIsolationExample.DB.Migrations
                 name: "IX_Prices_PriceGroupID",
                 table: "Prices",
                 column: "PriceGroupID");
+
+            // Ha med detta för att använda snapshots.
+            //migrationBuilder.Sql(
+            //    "ALTER DATABASE CURRENT SET ALLOW_SNAPSHOT_ISOLATION ON",
+            //    true);
         }
 
         /// <inheritdoc />
